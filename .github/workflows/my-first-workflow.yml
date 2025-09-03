@@ -5,7 +5,12 @@ jobs:
   first-job:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v5
+
       - name: Greet
         run: echo "Welcome to Gihub Action Learnings"
+        
       - name: Read Readme
         run: cat README.md
+    
